@@ -16,22 +16,22 @@ public class NichtCollectionsWeilDasGibtsSchon {
 
             System.out.println("Liste: " + freunde);
 
-        Set<String> einzigartig=new HashSet<>();
+        Set<String> einzigartig=new TreeSet<>();
         einzigartig.addAll(freunde);
         System.out.println("Set: " + einzigartig);
 
-        Map<String,String> telefonbuch = new HashMap<>();
-        telefonbuch.put("Erwin","0171");
-        telefonbuch.put("Kalle","0174");
-        telefonbuch.put("Herbert","0171");
-        telefonbuch.put("Horst","0172");
-
-        for (String s : telefonbuch.keySet()) {
-            System.out.println("Schlüssel: "+s+", Wert:"+telefonbuch.get(s));
-        }
-        for (Map.Entry<String, String> stringStringEntry : telefonbuch.entrySet()) {
-            System.out.println(stringStringEntry);
-        }
+//        Map<String,String> telefonbuch = new HashMap<>();
+//        telefonbuch.put("Erwin","0171");
+//        telefonbuch.put("Kalle","0174");
+//        telefonbuch.put("Herbert","0171");
+//        telefonbuch.put("Horst","0172");
+//
+//        for (String s : telefonbuch.keySet()) {
+//            System.out.println("Schlüssel: "+s+", Wert:"+telefonbuch.get(s));
+//        }
+//        for (Map.Entry<String, String> stringStringEntry : telefonbuch.entrySet()) {
+//            System.out.println(stringStringEntry);
+//        }
 
     }
 }
