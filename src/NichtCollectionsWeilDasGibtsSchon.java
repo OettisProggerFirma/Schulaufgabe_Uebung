@@ -26,7 +26,12 @@ public class NichtCollectionsWeilDasGibtsSchon {
         telefonbuch.put("Herbert","0171");
         telefonbuch.put("Horst","0172");
 
-        System.out.println("Map: "+telefonbuch);
+        for (String s : telefonbuch.keySet()) {
+            System.out.println("Schlüssel: "+s+", Wert:"+telefonbuch.get(s));
+        }
+        for (Map.Entry<String, String> stringStringEntry : telefonbuch.entrySet()) {
+            System.out.println(stringStringEntry);
+        }
 
     }
 }
